@@ -1,0 +1,26 @@
+{
+  "name": "charlist-api",
+  "version": "1.0.0",
+  "description": "iceandfire-character-list",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/mongo.warmup.js && node src/index.js"
+  },
+  "keywords": [
+    "test",
+    "iceandfire",
+    "sanadar"
+  ],
+  "author": "s0p3nie",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/nes": "^12.0.2",
+    "@hapi/vision": "^6.0.0",
+    "hapi-swagger": "^13.0.0",
+    "mongoose": "^5.9.7",
+    "node-fetch": "^2.6.0"
+  }
+}
