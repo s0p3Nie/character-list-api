@@ -4,5 +4,4 @@
 
 ### Launching:
 setup MongoDB, clone project, tweak Resources/config.js with your parameters
-> npm i
-> npm start
+> npm i && npm start
