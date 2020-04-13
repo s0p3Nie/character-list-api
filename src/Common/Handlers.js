@@ -35,7 +35,7 @@ function buildResponse(request, h, query) {
 
 async function find(filter) {
     await MongoClient.createConnection();
-    let mongoModel = MongoClient.getModel().model;
+    let mongoModel = MongoClient.getModel();
     let mainResult = await mongoModel.find(filter.query, '-__v -_id', { skip: filter.page, limit: filter.pageSize });
     console.log(mainResult);
     if (filter.idInitiated) {

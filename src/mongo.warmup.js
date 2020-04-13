@@ -16,7 +16,7 @@ const init = async () => {
 
     collections.forEach(async (element) => {
         MongoClient.setCollection(element);
-        let Model = MongoClient.getModel().model;
+        let Model = MongoClient.getModel();
 
         let removeResult = await Model.deleteMany();
         console.log('deleted ' + element + ' ' + removeResult.deletedCount);

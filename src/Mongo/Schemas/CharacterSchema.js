@@ -20,4 +20,4 @@ const CharacterSchema = new Schema({
     playedBy: [String],
 });
 
-module.exports = { model: mongoose.model('Character', CharacterSchema), schema: CharacterSchema};
+module.exports = CharacterSchema;

@@ -20,4 +20,4 @@ const HouseSchema = new Schema({
     swornMembers: [String],
 });
 
-module.exports = { model: mongoose.model('House', HouseSchema), schema: HouseSchema };
+module.exports = HouseSchema;

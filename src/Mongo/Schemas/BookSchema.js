@@ -15,4 +15,4 @@ const BookSchema = new Schema({
     povCharacters: [String],
 });
 
-module.exports = { model: mongoose.model('Book', BookSchema), schema: BookSchema };
+module.exports = mongoose.model('Book', BookSchema);
